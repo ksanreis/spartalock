@@ -6,7 +6,7 @@ require "validar_acesso.php";
 //arrays de pedir livros
 $livros = array();
 
-$arquivo = fopen('arquivo.txt', 'r');
+$arquivo = fopen('livros-pedidos.txt', 'r');
 //feof - testa pelo fim do arquivo, ou seja, ela percorre
 //o arquivo até encontrar o fim dele
 
@@ -16,12 +16,13 @@ while (!feof($arquivo)) {
   //echo $registro;
   $livros[] = $registro;
 }
-/*
-echo "<pre>";
+
+/*echo "<pre>";
 print_r($livros);
 echo "</pre>";
+*/
 fclose($arquivo);
-/*
+
 //só para visualziar o array de chamados
 
 /*echo '<pre>';

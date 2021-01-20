@@ -36,9 +36,6 @@
         <img src="Biblioteca digital.png" width="40" height="40" class="d-inline-block align-top" alt="">
         Biblioteca Digital
       </a>
-
-
-
     </div>
   </nav>
 
@@ -61,14 +58,15 @@
                 <input name="senha" type="password" class="form-control" placeholder="Senha">
               </div>
               <?php if (isset($_GET['login']) &&  $_GET['login'] == 'erro') { ?>
-                <div class="text-danger">
-                  Usuário ou senha inválido(s)
+                <div class="alert alert-danger" role="alert">
+                  Usuário e/ou senha inválido(s)!
                 </div>
+
               <?php } ?>
 
               <?php if (isset($_GET['login']) &&  $_GET['login'] == 'erro2') { ?>
-                <div class="text-danger">
-                  Faça o login para acessar a página
+                <div class="alert alert-warning" role="alert">
+                  É necessário fazer o login para entrar na página!
                 </div>
               <?php } ?>
               <button class="waves-effect waves-light btn-large blue lighten-3" type="submit">Entrar</button>

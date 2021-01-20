@@ -4,6 +4,7 @@
 session_start();
 $usuario_auten = false;
 
+
 $usuarios = array(
   array('email' => 'adm@teste.com', 'senha' => '123456'),
   array('email' => 'user@teste.com', 'senha' => 'abcdef'),
@@ -21,7 +22,6 @@ if ($usuario_auten) {
   $_SESSION['autenticado'] = 'SIM';
   header('Location:home.php');
 } else {
-
   $_SESSION['autenticado'] = 'NAO';
-  header('Location:index.php?login=erro'); //usada para enviar cabeçalho bruto
+  header('Location:index.php?login=erro'); //passar parâmetro pela URL
 }

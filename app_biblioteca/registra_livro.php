@@ -9,7 +9,7 @@ echo "</pre>";*/
 //SO que está rodando a aplicação
 $texto = $_POST['titulo'] . '#' . $_POST['tema'] . PHP_EOL;
 //abrindo, escrevendo e fechando o arquivo
-$arquivo = fopen('arquivo.txt', 'a');
+$arquivo = fopen('livros-pedidos.txt', 'a');
 fwrite($arquivo, $texto);
 fclose($arquivo);
 header('Location:home.php');
