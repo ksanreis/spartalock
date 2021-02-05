@@ -8,7 +8,7 @@ $result = $conn->query($query_);
 
 if ($result->num_rows > 0) {
   while ($row = $result->fetch_assoc()) {
-    //echo $row['id_usuario'] . "|" . $row['senha'] . "|" . $row['nome_usuario'];
+    //echo $row['id_usuario'] . "|" . $row['senha'] . "|" . $row['nome'];
     $_SESSION['idusuario'] = $row['id_usuario'];
     $_SESSION['autenticado'] = 'SIM';
     header('Location:home.php');

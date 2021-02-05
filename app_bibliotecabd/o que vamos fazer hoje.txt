@@ -1,7 +1,7 @@
-[ ] mostrar criação do banco de dados (phpadmin)
-[ ] mostrar criação de uma tabela
-[ ] Criar arquivo de conexao.php
-[ ] Integração php+ mysql login
-[ ] Integração php+ mysql cadastro
-[ ] Integração php+ mysql cadastro de livros
-[ ] Integração php+ mysql exibir livros pedidos
+[x] mostrar criação do banco de dados (phpadmin)
+[x] mostrar criação de uma tabela
+[x] Criar arquivo de conexao.php
+[x] Integração php+ mysql login
+[x] Integração php+ mysql cadastro
+[x] Integração php + mysql cadastro de livros
+[x] Integração php + mysql exibir livros pedidos

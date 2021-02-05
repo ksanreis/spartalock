@@ -30,7 +30,7 @@ require "historico_livros.php";
 
 <body>
 
-  <br />
+  <br /><br /><br />
   <div class="container">
     <div class="box">
       <div class="card">
@@ -44,14 +44,17 @@ require "historico_livros.php";
 
             <?php foreach ($dados_livros as $livro) {
               $historico_livros = explode('#', $livro);
+              /*echo "<pre>";
+              print_r($historico_livros);
+              echo "</pre>";*/
             ?>
           <tr>
             <?php
               echo "<td class='table-info'>";
-              echo $historico_livros[0];
+              echo $historico_livros[1];
               echo "</td>";
               echo "<td class='table-info'>";
-              echo $historico_livros[1];
+              echo $historico_livros[0];
               echo "</td>";
 
             ?>

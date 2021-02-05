@@ -12,9 +12,9 @@ if ($result->num_rows > 0) {
 } else {
 
   //header('Location:home.php?nota=erro1'); //usada para enviar cabeçalho bruto
-  /* echo ("<script>
+  echo ("<script>
         window.alert('Você não possui livros pedidos.')
         window.location.href='home.php';
-    </script>");*/
+    </script>");
 }
 $conn->close();
