@@ -64,6 +64,8 @@ echo '</pre>';*/
         <div class=" card-content black-text">
           <span class=" card-title">Consulta Livro</span>
         </div>
+        <!--foreach um iteração de uma lista-->
+
         <?php foreach ($livros as $livro) { ?>
           <div class="card-action">
 
