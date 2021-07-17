@@ -40,13 +40,13 @@ require "validar_acesso.php";
 
         </div>
         <div class="card-action">
-          <a href="pegar_livro.php">
+          <a href="pedir_livro.php">
             <img src="livro.svg" width="50px" height="50px" />
             Pedir Livro
           </a>
         </div>
         <div class="card-action">
-          <a href="consulta_livro.php">
+          <a href="consultar_livro.php">
             <img src="historico.svg" width="50px" height="50px" />
             Consultar Livro
           </a>

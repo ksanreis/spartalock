@@ -1,5 +1,5 @@
 <?php
-//startar a sessão deve ficar antes de 
+//inicia a sessão deve ficar antes de 
 //qualquer impressão de dados no navegador (echo)
 session_start();
 $usuario_auten = false;
@@ -17,7 +17,7 @@ foreach ($usuarios as $user) {
     $usuario_auten = true;
   }
 }
-
+//header () é usado para enviar um cabeçalho HTTP bruto
 if ($usuario_auten) {
   $_SESSION['autenticado'] = 'SIM';
   header('Location:home.php');
